@@ -6,10 +6,18 @@
     <div class="header_left">
       {% include 'partials/_nav.html' %}
       <div class="banner_main">
-        <h1 class="banner_taital">financial <br>Service</h1>
-        <p class="banner_text">
-          Your trusted broker for managing debt, investing, and building wealth. We offer tailored financial solutions to help you achieve your goals and secure a brighter future. Let's get started today!
+        <h3 class="banner_taital" style="font-size:40px;">
+          Your Trusted Financial and Mortgage Advisory Service
+        </h3>
+        <p class="banner_text" >
+          As a dedicated financial advisor and mortgage advisor, 
+          I provide expert guidance to help you navigate both your
+           financial goals and the complex world of home loans. Wheth
+           er you're looking to grow your savings, plan for the future, 
+           or secure the best mortgage options for your property, I am he
+           re to guide you every step of the way.
         </p>
+
         <div class="btn_main">
           <div class="more_bt"><a href="#">Read More </a></div>
           <div class="contact_bt"><a href="{% url 'contact' %}">Contact Us</a></div>
@@ -24,39 +32,47 @@
     <!--services section start -->
     <div class="what_we_do_section layout_padding">
       <div class="container">
-        <h1 class="what_taital">WHAT WE DO</h1>
-        <p class="what_text">It is a long established fact that a reader will be distracted by the readable content of a </p>
+        <h1 class="what_taital">WHAT I DO</h1>
+        <h3 class="what_text">
+          Expert Financial Services Tailored to Your Needs
+        </h3>
+        <p>
+          I specialize in offering expert advice across a wide range of financial services. From managing investments to ensuring you're on track for a secure retirement, I work closely with you to achieve your financial goals.
+        </p>
         <div class="what_we_do_section_2">
           <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="box_main">
               <div class="icon_1"><img src="{% static 'images/icon-1.png' %}"></div>
-              <h3 class="accounting_text">Accounting</h3>
-              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+              <h3 class="accounting_text">Mortgage Advice</h3>
+              <p class="lorem_text">
+                Whether you're a first-time homebuyer or looking to refinance, I guide you through the mortgage process, helping you find the best options for your needs, and securing the best terms for your home loan.              </p>
               <div class="moremore_bt_1"><a href="#">Read More </a></div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box_main active">
                 <div class="icon_1"><img src="{% static 'images/icon-2.png' %}"></div>
-                <h3 class="accounting_text">Advisor</h3>
-              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+                <h3 class="accounting_text">Financial Planning</h3>
+              <p class="lorem_text">
+                Comprehensive strategies to help you manage and grow your finances, both short-term and long-term, ensuring you're always on track to meet your financial objectives.
+              </p>
               <div class="moremore_bt_1"><a href="#">Read More </a></div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box_main">
                 <div class="icon_1"><img src="{% static 'images/icon-3.png' %}"></div>
-                <h3 class="accounting_text">Investment</h3>
-              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+                <h3 class="accounting_text">Investment Advice</h3>
+              <p class="lorem_text">Grow your wealth with strategic and personalized investment plans tailored to your goals, risk tolerance, and time horizon.</p>
               <div class="moremore_bt_1"><a href="#">Read More </a></div>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="box_main">
                 <div class="icon_1"><img src="{% static 'images/icon-4.png' %}"></div>
-                <h3 class="accounting_text">Financial</h3>
-              <p class="lorem_text">Lorem Ipsum is simply dummy text of the printing and</p>
+                <h3 class="accounting_text">Retirement Planning</h3>
+              <p class="lorem_text">Secure a comfortable future by preparing for your retirement with well-structured plans that ensure you can enjoy the lifestyle you’ve worked hard for.</p>
               <div class="moremore_bt_1"><a href="#">Read More </a></div>
             </div>
           </div>
@@ -71,8 +87,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="project_main">
-              <h1 class="services_taital">Our projects</h1>
-              <p class="services_text">It is a long established fact that a reader will be distracted by the readable content of a </p>
+              <h1 class="services_taital">Client Success Highlights</h1>
+              <p class="services_text">  I’ve had the privilege of helping clients achieve meaningful financial goals—from purchasing their first home to retiring with confidence. Here are some of the journeys I've supported along the way.
+              </p>
               <div class="moremore_bt"><a href="#">Read More </a></div>
               <div class="image_6"><img src="{% static 'images/img-6.png' %}"></div>
             </div>
@@ -81,34 +98,34 @@
             <div class="images_main">
               <div class="images_left">
                 <div class="container_1">
-                  <img src="{% static 'images/img-5.png' %}" alt="Avatar" class="image" style="width:100%">
+                  <img src="{% static 'images/homekey.jpg' %}" alt="Avatar" class="image" style="width:100%">
                   <div class="middle">
                     <div class="text"><img src="{% static 'images/search-icon.png' %}"></div>
-                    <h2 class="fact_text">Established Fact</h2>
+                    <h2 class="fact_text">First Home Purchased</h2>
                     
                   </div>
                 </div>
                 <div class="container_1">
-                  <img src="{% static 'images/img-3.png' %}" alt="Avatar" class="image" style="width:100%">
+                  <img src="{% static 'images/credit.jpg' %}" alt="Avatar" class="image" style="width:100%">
                   <div class="middle">
                     <div class="text"><img src="{% static 'images/search-icon.png' %}"></div>
-                    <h2 class="fact_text">Established Fact</h2>
+                    <h2 class="fact_text">Debt-Free in 3 Years</h2>
                   </div>
                 </div>
               </div>
               <div class="images_right">
                 <div class="container_1">
-                  <img src="{% static 'images/img-4.png' %}" alt="Avatar" class="image" style="width:100%">
+                  <img src="{% static 'images/senior.jpg' %}" alt="Avatar" class="image" style="width:100%">
                   <div class="middle">
                     <div class="text"><img src="{% static 'images/search-icon.png' %}"></div>
-                    <h2 class="fact_text">Established Fact</h2>
+                    <h2 class="fact_text">Early Retirement Plan</h2>
                   </div>
                 </div>
                 <div class="container_1">
-                  <img src="{% static 'images/img-5.png' %}" alt="Avatar" class="image" style="width:100%">
+                  <img src="{% static 'images/portfolio.jpg' %}" alt="Avatar" class="image" style="width:100%">
                   <div class="middle">
                     <div class="text"><img src="{% static 'images/search-icon.png' %}"></div>
-                    <h2 class="fact_text">Established Fact</h2>
+                    <h2 class="fact_text">Investment Portfolio Growth</h2>
                   </div>
                 </div>
               </div>
@@ -122,39 +139,40 @@
         <div class="row">
           <div class="col-lg-3 col-sm-6">
             <div class="icon_1"><img src="{%static 'images/icon-3.png' %}"></div>
-            <h3 class="accounting_text_1">1000+</h3>
-            <p class="yers_text">Years of Business</p>
+            <h3 class="accounting_text_1">10+</h3>
+            <p class="yers_text">Years in Financial Services</p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="icon_1"><img src="{%static 'images/icon-4.png' %}"></div>
-            <h3 class="accounting_text_1">20000+</h3>
-            <p class="yers_text">Projects Delivered</p>
+            <h3 class="accounting_text_1">300+</h3>
+            <p class="yers_text">Clients Helped</p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="icon_1"><img src="{%static 'images/icon-2.png' %}"></div>
-            <h3 class="accounting_text_1">10000+</h3>
-            <p class="yers_text">Satisfied Customers</p>
+            <h3 class="accounting_text_1">150+</h3>
+            <p class="yers_text">Home Loans Approved</p>
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="icon_1"><img src="{%static 'images/icon-1.png' %}"></div>
-            <h3 class="accounting_text_1">1500+</h3>
-            <p class="yers_text">Services</p>
+            <h3 class="accounting_text_1">95%</h3>
+            <p class="yers_text">Client Satisfaction Rate</p>
           </div>
         </div>
       </div>
     </div>
+    
     <!--project section end -->
     <!--team section start -->
     <div class="team_section layout_padding">
       <div class="container">
-        <h1 class="what_taital">Our Team and experts</h1>
-        <p class="what_text_1">It is a long established fact that a reader will be distracted by the readable content of a </p>
+        <h1 class="what_taital">About Me</h1>
+        <p class="what_text_1">I'm a licensed financial adviser committed to helping individuals and families make smarter financial decisions—from home loans and budgeting to investments and insurance planning.</p>
         <div class="team_section_2 layout_padding">
-          <div class="row">
-            <div class="col-sm-3">
+          <div class="row justify-content-center">
+            <div class="col-sm-4">
               <img src="{% static 'images/img-7.png' %}" class="image_7">
-              <p class="readable_text">Readable</p>
-              <p class="readable_text_1">Follow Us</p>
+              <p class="readable_text">Chris Ancheta</p>
+              <p class="readable_text_1">Financial Adviser</p>
               <div class="social_icon">
                 <ul>
                   <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
@@ -163,42 +181,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-sm-3">
-                <img src="{% static 'images/img-8.png' %}" class="image_8">
-                <p class="readable_text">Content</p>
-              <p class="readable_text_1">Follow Us</p>
-              <div class="social_icon">
-                <ul>
-                    <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3">
-                <img src="{% static 'images/img-9.png' %}" class="image_9">
-              <p class="readable_text">Readable</p>
-              <p class="readable_text_1">Follow Us</p>
-              <div class="social_icon">
-                <ul>
-                    <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3">
-                <img src="{% static 'images/img-10.png' %}" class="image_10">
-              <p class="readable_text">Content</p>
-              <p class="readable_text_1">Follow Us</p>
-              <div class="social_icon">
-                <ul>
-                    <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
-                    <li><a href="#"><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
-                </ul>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -215,14 +198,16 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <h1 class="what_taital">what is syas our clients</h1>
+              <h1 class="what_taital">What Our Clients Say</h1>
               <div class="client_section_2 layout_padding">
                 <ul>
                   <li><img src="{% static 'images/round-1.png' %}" class="round_1"></li>
                   <li><img src="{% static 'images/img-11.png' %}" class="image_11"></li>
                   <li><img src="{% static 'images/round-2.png' %}" class="round_2"></li>
                 </ul>
-                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                <p class="dummy_text">
+                  I had no idea where to start with my mortgage. [Your Name] made the entire process simple and stress-free. Highly recommended!"
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -233,7 +218,9 @@
                     <li><img src="{% static 'images/img-11.png' %}" class="image_11"></li>
                     <li><img src="{% static 'images/round-2.png' %}" class="round_2"></li>
                 </ul>
-                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                <p class="dummy_text">
+                  As a small business owner, I needed solid advice for my investments and insurance. I trust [Your Name] completely.
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -244,7 +231,9 @@
                     <li><img src="{% static 'images/img-11.png' %}" class="image_11"></li>
                     <li><img src="{% static 'images/round-2.png' %}" class="round_2"></li>
                 </ul>
-                <p class="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem</p>
+                <p class="dummy_text">
+                  Clear advice, quick communication, and real results. Helped me refinance at a better rate. Thank you!
+                </p>
               </div>
             </div>
           </div>
@@ -252,4 +241,24 @@
       </div>
     </div>
     <!--client section end -->
+    <style>
+      .what_we_do_section_2 .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .what_we_do_section_2 .col-lg-3 {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .box_main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+      
+      </style>
     {% endblock %}
