@@ -3,48 +3,51 @@
 {% block content %}
 <div class="header_section">
     <div class="header_left">
-      {% include 'partials/_nav.html' %}
-      </div>
-  </div>
-  <div class="contact_section layout_padding" style="padding-bottom: 30px;">
+        {% include 'partials/_nav.html' %}
+    </div>
+</div>
+
+<div class="contact_section layout_padding" style="padding-bottom: 30px;">
     <div class="container-fluid">
-      <h1 class="what_taital">Contact us</h1>
-      <p class="amet_text">
-        Have questions about your finances? Whether you're looking for mortgage advice, financial planning, or investment guidance, I'm here to help. I provide personalized support tailored to your goals.
-      </p>
-      <div class="contact_section2">
-        <div class="row">
-          <div class="col-md-6 padding_left_0">
-            <div class="mail_section">
-              <input type="" class="mail_text_1" placeholder="Name" name="Name">
-              <input type="" class="mail_text_1" placeholder="Phone Number" name="Phone Number">
-              <input type="" class="mail_text_1" placeholder="Email" name="Email">
-              <textarea class="massage_text" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
-              <div class="send_bt"><a href="#">send</a></div>
+        <h1 class="what_taital">Contact us</h1>
+        <p class="amet_text">
+            Have questions about your finances? Whether you're looking for mortgage advice, financial planning, or investment guidance, I'm here to help. I provide personalized support tailored to your goals.
+        </p>
+        <div class="contact_section2">
+            <div class="row">
+                <div class="col-md-6 padding_left_0">
+                    <form method="post" action="/submit_form/">
+                        {% csrf_token %}
+                        <div class="mail_section">
+                            <input type="text" class="mail_text_1" placeholder="Name" name="Name" required>
+                            <input type="text" class="mail_text_1" placeholder="Phone Number" name="Phone" required>
+                            <input type="email" class="mail_text_1" placeholder="Email" name="Email" required>
+                            <textarea class="massage_text" placeholder="Message" rows="5" id="comment" name="Message" required></textarea>
+                            <div class="send_bt">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6 padding_0">
+                    <p><strong>Email:</strong> chris.ancheta@topitsolutions.co.nz</p>
+                    <p><strong>Phone:</strong> +64 224936601</p>
+                    <p><strong>Location:</strong> Auckland, New Zealand</p>
+                </div>
+
+                <!--  Contact Info Section -->
+
             </div>
 
             <div class="col-md-6 padding_0">
-              <p><strong>Email:</strong> chris.ancheta@topitsolutions.co.nz</p>
-              <p><strong>Phone:</strong> +64 224936601</p>
-              <p><strong>Location:</strong> Auckland, New Zealand</p>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Auckland+New+Zealand"
+                        width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                </div>
             </div>
-  
-            <!--  Contact Info Section -->
-           
-          </div>
-  
-          <div class="col-md-6 padding_0">
-            <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Auckland+New+Zealand"
-                width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  
-
-
+</div>
 
 {% endblock %}
