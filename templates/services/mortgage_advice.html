@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* General Styles */
+    .services_taital {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .services_text {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .section_subtitle {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .services_list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .services_list li {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .services_process {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .services_process li {
+        margin-bottom: 10px;
+    }
+
+    /* Image Styling */
+    .image_container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image_1 {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Layout Adjustments */
+    .layout_padding {
+        padding: 50px 0;
+    }
+</style>
+
+<div class="header_section">
+    <div class="header_left">
+        {% include 'partials/_nav.html' %}
+    </div>
+</div>
+
+<div class="services_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="services_taital">WELCOME TO OUR MORTGAGE ADVISORY SERVICE</h1>
+                <p class="services_text">
+                    As a dedicated mortgage advisor, my goal is to help you find the best mortgage options tailored to your needs. Whether you're purchasing your first home, refinancing an existing loan, or investing in property, I provide expert guidance throughout the entire process.
+                </p>
+                <p class="services_text">
+                    Securing a mortgage can be complex, but with my experience and knowledge, I simplify the process to ensure you understand your options. I offer personalized advice and work with you to find the most competitive interest rates, flexible terms, and financial solutions that align with your goals.
+                </p>
+
+                <h3 class="section_subtitle">Why Choose Our Mortgage Advisory Services?</h3>
+                <ul class="services_list">
+                    <li><strong>Personalized Advice:</strong> Every client is different, and I tailor my advice to fit your unique circumstances.</li>
+                    <li><strong>Competitive Rates:</strong> I help you find the best mortgage rates available, ensuring affordability and long-term financial success.</li>
+                    <li><strong>Expert Guidance:</strong> With years of experience, I will guide you through every step of the mortgage process.</li>
+                    <li><strong>Comprehensive Support:</strong> From pre-approval to closing, I offer ongoing support to make sure you're confident in your decisions.</li>
+                </ul>
+
+                <h3 class="section_subtitle">Our Mortgage Process</h3>
+                <ol class="services_process">
+                    <li><strong>Consultation:</strong> We start by understanding your financial goals and needs, helping you choose the right mortgage option.</li>
+                    <li><strong>Application:</strong> I assist you with the application process, ensuring all documentation is in place.</li>
+                    <li><strong>Approval:</strong> Once your mortgage is approved, I’ll help you understand the terms and guide you through the next steps.</li>
+                    <li><strong>Closing:</strong> I’ll be with you through the closing process, answering any questions you may have along the way.</li>
+                </ol>
+
+                <p class="services_text">
+                    With my personalized approach and expert advice, I aim to make your mortgage experience as smooth and stress-free as possible. If you’re ready to take the next step in homeownership, I’m here to help.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="image_container">
+                    <img src="{% static 'images/homekey.jpg' %}" class="image_1" alt="Mortgage Advisory">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

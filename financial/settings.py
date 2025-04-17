@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['192.168.10.250', 'localhost', 'financeservice.balaydalakay.com
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'services.apps.ServicesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

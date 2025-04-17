@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* General Styles */
+    .services_taital {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .services_text {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .section_subtitle {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .services_list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .services_list li {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .services_process {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .services_process li {
+        margin-bottom: 10px;
+    }
+
+    /* Image Styling */
+    .image_container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image_1 {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Layout Adjustments */
+    .layout_padding {
+        padding: 50px 0;
+    }
+</style>
+
+<div class="header_section">
+    <div class="header_left">
+        {% include 'partials/_nav.html' %}
+    </div>
+</div>
+
+<div class="services_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="services_taital">WELCOME TO OUR RETIREMENT STRATEGIES SERVICE</h1>
+                <p class="services_text">
+                    Planning for retirement is essential to securing your future, and with my retirement strategies, you can rest assured knowing you have a clear path to financial independence. Whether you're just starting your career or nearing retirement, I provide personalized solutions to ensure your retirement goals are met.
+                </p>
+                <p class="services_text">
+                    I focus on helping you build a sustainable income for retirement by understanding your unique financial situation. Together, we will create a plan that includes smart investment strategies, tax planning, and effective savings techniques to maximize your retirement funds and minimize risks.
+                </p>
+
+                <h3 class="section_subtitle">Why Choose Our Retirement Strategies Service?</h3>
+                <ul class="services_list">
+                    <li><strong>Customized Retirement Plans:</strong> Your retirement strategy will be designed based on your specific goals, timeline, and risk tolerance.</li>
+                    <li><strong>Investment Strategies:</strong> I will guide you through creating an investment portfolio that works towards growing your wealth over time.</li>
+                    <li><strong>Tax-Efficient Planning:</strong> I help you understand the tax implications of your retirement income and plan accordingly to minimize your tax burden.</li>
+                    <li><strong>Regular Reviews:</strong> We review and adjust your retirement plan regularly to ensure it remains on track with your changing circumstances and market conditions.</li>
+                </ul>
+
+                <h3 class="section_subtitle">Our Retirement Planning Process</h3>
+                <ol class="services_process">
+                    <li><strong>Initial Consultation:</strong> We start by assessing your current financial situation, goals, and retirement aspirations.</li>
+                    <li><strong>Plan Development:</strong> Based on your objectives, I will create a tailored retirement plan, including investment and tax strategies.</li>
+                    <li><strong>Implementation:</strong> I will help you implement your plan, making necessary adjustments along the way to ensure maximum growth and security.</li>
+                    <li><strong>Ongoing Support:</strong> Retirement planning is an ongoing process. I provide regular reviews and adjustments to keep your plan on track for long-term success.</li>
+                </ol>
+
+                <p class="services_text">
+                    Whether you’re just starting to save for retirement or looking to optimize your existing strategy, I’m here to help you make informed decisions that will ensure a comfortable and secure future. Let’s work together to build a retirement plan that aligns with your goals.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="image_container">
+                    <img src="{% static 'images/senior.jpg' %}" class="image_1" alt="Retirement Strategies">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

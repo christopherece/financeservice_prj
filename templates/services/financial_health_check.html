@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* General Styles */
+    .services_taital {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .services_text {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .section_subtitle {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .services_list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .services_list li {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .services_process {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .services_process li {
+        margin-bottom: 10px;
+    }
+
+    /* Image Styling */
+    .image_container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image_1 {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Layout Adjustments */
+    .layout_padding {
+        padding: 50px 0;
+    }
+</style>
+
+<div class="header_section">
+    <div class="header_left">
+        {% include 'partials/_nav.html' %}
+    </div>
+</div>
+
+<div class="services_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="services_taital">WELCOME TO OUR FINANCIAL HEALTH CHECK SERVICE</h1>
+                <p class="services_text">
+                    A Financial Health Check is a comprehensive assessment of your overall financial situation. Whether you're managing debt, saving for the future, or planning for big life changes, this service provides valuable insights into how to optimize your financial health.
+                </p>
+                <p class="services_text">
+                    I will analyze your current financial standing, including income, expenses, debts, investments, and savings, to identify strengths and areas that need improvement. With a clear understanding of your financial health, I will provide personalized recommendations to help you achieve your financial goals and secure your future.
+                </p>
+
+                <h3 class="section_subtitle">Why Choose Our Financial Health Check Service?</h3>
+                <ul class="services_list">
+                    <li><strong>Comprehensive Review:</strong> A holistic approach by reviewing all aspects of your financial life, including budgeting, investments, and insurance coverage.</li>
+                    <li><strong>Identify Areas for Improvement:</strong> I’ll help you pinpoint areas where you can save money, reduce debt, and grow your wealth.</li>
+                    <li><strong>Personalized Recommendations:</strong> Tailored advice and strategies to improve your financial situation.</li>
+                    <li><strong>Ongoing Support:</strong> Continuous support to help you stay on track with your financial goals, offering advice and adjustments as your situation evolves.</li>
+                </ul>
+
+                <h3 class="section_subtitle">Our Financial Health Check Process</h3>
+                <ol class="services_process">
+                    <li><strong>Initial Assessment:</strong> Review your income, expenses, debts, and savings to get a clear picture of your financial health.</li>
+                    <li><strong>Financial Analysis:</strong> Analyze the information provided, identifying key areas for improvement.</li>
+                    <li><strong>Recommendations:</strong> Offer actionable recommendations, from budgeting tips to investment strategies.</li>
+                    <li><strong>Ongoing Monitoring:</strong> Continuously monitor your financial progress to ensure you stay on track.</li>
+                </ol>
+
+                <p class="services_text">
+                    A healthy financial future starts with a clear understanding of your current financial situation. Let’s work together to ensure you're on the right path toward achieving your financial goals, from reducing debt to building wealth and securing your future.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="image_container">
+                    <img src="{% static 'images/credit.jpg' %}" class="image_1" alt="Financial Health Check">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

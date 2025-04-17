@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    /* General Styles */
+    .services_taital {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .services_text {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .section_subtitle {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .services_list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .services_list li {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .services_process {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+
+    .services_process li {
+        margin-bottom: 10px;
+    }
+
+    /* Image Styling */
+    .image_container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .image_1 {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Layout Adjustments */
+    .layout_padding {
+        padding: 50px 0;
+    }
+</style>
+
+<div class="header_section">
+    <div class="header_left">
+        {% include 'partials/_nav.html' %}
+    </div>
+</div>
+
+<div class="services_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="services_taital">WELCOME TO OUR INVESTMENT PLANNING SERVICE</h1>
+                <p class="services_text">
+                    Investment planning is a critical step in securing your financial future. Whether you're looking to build wealth, save for a large purchase, or create a passive income stream, I provide personalized investment strategies that align with your goals and risk tolerance.
+                </p>
+                <p class="services_text">
+                    I focus on understanding your financial objectives and designing a diversified investment portfolio that meets your unique needs. Together, we will create a plan that allows you to achieve your financial goals, minimize risks, and take advantage of market opportunities.
+                </p>
+
+                <h3 class="section_subtitle">Why Choose Our Investment Planning Service?</h3>
+                <ul class="services_list">
+                    <li><strong>Customized Investment Strategies:</strong> I will tailor your investment strategy based on your financial goals, risk appetite, and timeline.</li>
+                    <li><strong>Diversified Portfolio:</strong> We will create a well-diversified investment portfolio to minimize risk and maximize growth potential.</li>
+                    <li><strong>Regular Monitoring and Adjustments:</strong> I offer continuous monitoring and adjustments to your investment strategy to keep it aligned with market changes and your financial goals.</li>
+                    <li><strong>Comprehensive Financial Advice:</strong> Along with investment planning, I provide expert advice on tax efficiency, asset allocation, and wealth preservation strategies.</li>
+                </ul>
+
+                <h3 class="section_subtitle">Our Investment Planning Process</h3>
+                <ol class="services_process">
+                    <li><strong>Initial Consultation:</strong> We start by discussing your financial goals, risk tolerance, and time horizon to understand your investment needs.</li>
+                    <li><strong>Portfolio Design:</strong> Based on the initial consultation, I will design a customized investment portfolio to suit your objectives and risk profile.</li>
+                    <li><strong>Investment Execution:</strong> I will assist you in executing the investment strategy, ensuring you’re on the right path to achieving your goals.</li>
+                    <li><strong>Ongoing Monitoring and Review:</strong> I provide ongoing support to monitor and adjust your portfolio as market conditions and your personal situation evolve.</li>
+                </ol>
+
+                <p class="services_text">
+                    With a well-planned investment strategy, you can build wealth, protect your financial future, and achieve your long-term goals. Let’s work together to develop an investment plan that works for you.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="image_container">
+                    <img src="{% static 'images/portfolio.jpg' %}" class="image_1" alt="Investment Planning">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
